@@ -1,22 +1,7 @@
-#XDroidMvp 轻量级的Android MVP快速开发框架
+# 轻量级的Android MVP快速开发框架
 
 ## 概述
-
-<p align="center">
-	<img src="xdroid_logo_128.png"/>
-</p>
-
-**XDroidMvp**是[XDroid](https://github.com/limedroid/XDroid)Android快速开发框架的MVP版本，其使用方式类似于`XDroid`，大部分源码也来自`XDroid`。
-
-**XDroidMvp全新文档**：[https://github.com/limedroid/XDroidMvp/wiki](https://github.com/limedroid/XDroidMvp/wiki)
-
-[![](https://jitpack.io/v/limedroid/XDroidMvp.svg)](https://jitpack.io/#limedroid/XDroidMvp)
-
-<p align="center">
-	<img src="art/XdroidMvp_total.png"/>
-</p>
-
-`XDroidMvp`主要会有这些特性：
+主要会有这些特性：
 
 **无需写`Contract`！ 无需写`Present`接口！  无需写`View`接口!**
 
@@ -118,30 +103,19 @@ public class PBasePager extends XPresent<BasePagerFragment> {
                 });
     }
 }
-```
 
-## Get Started
 
-使用，仅需四步：
+### step1
 
-### step1  
+将`mvp`作为依赖库，在您的app module 中 添加如下依赖:
 
-clone 'XDroid'库到本地:
-```groovy
-git clone https://github.com/limedroid/XDroidMvp.git
+compile project(':mvp')
 ```
 
 ### step2
 
-将`mvp`作为依赖库，在您的app module 中 添加如下依赖:
-```groovy
-compile project(':mvp')
-```
-
-### step3
-
 拷贝`conf.gradle`到您的项目根目录，并修改项目gradle文件下引入：
-```groovy
+
 apply from: "conf.gradle"
 ```
 
@@ -158,37 +132,7 @@ allprojects {
 
 ### step4
 
-修改`XDroidConf`配置类，主要针对log、cache、router、imageloader。若采用默认配置，此步骤可略过.
-
-## 第二种方式，通过JitPack引入
-
-### step1 在根目录的gradle文件中配置:
-```groovy
-allprojects {
-    repositories {
-        jcenter()
-        maven { url "https://jitpack.io" }
-    }
-}
-```
-
-### step2 添加依赖:
-```groovy
-dependencies {
-	   implementation 'com.github.limedroid:XDroidMvp:v2.0.1'
-}
-```
-
-
-## Demo效果
-
-<p align="center">
-	<img src="art/snapshot_2.png"/>
-</p>
-
-<p align="center">
-	<img src="art/snapshot_1.png"/>
-</p>
+修改`XMVPConf`配置类，主要针对log、cache、router、imageloader。若采用默认配置，此步骤可略过.
 
 
 ## 重要说明
@@ -198,17 +142,6 @@ dependencies {
 * [RxPermissions](https://github.com/tbruyelle/RxPermissions)使用的是0.9.1版本，具体如何使用可以查看官网。
 * [retrofit](https://github.com/square/retrofit)，具体如何使用可以查看官网。
 
-## 更新日志
-
-* 2017-04-23，新增proguard rules,upgrade to rx2
-* 2016-12-23，新增mvp、base、cache、event、imageloader、log、router
-* 2016-12-25，新增rxJava、rxAndroid、rxlifecycle、rxpermission、rxbus、net(retrofit)
-* 2016-12-26，新增网络异常统一处理
-* 2016-12-28，重构MVP
-* 2016-12-30，重构网络层
-* 2016-12-31，新增[Demo](https://github.com/limedroid/XDroidMvp/tree/master/app)
-
-
 ## TODO
 
 * [x] rx
@@ -217,16 +150,5 @@ dependencies {
 * [x] rxbus
 * [x] cache
 * [x] wiki
-* [x] demo
-
-## About Me
-
-**Email** : droidlover@126.com
-
-**XDroid交流群**：153569290
-
-**XDroid MVC版本**：[XDroid](https://github.com/limedroid/XDroid)
-
-若您在使用过程中遇到任何问题，欢迎加入 **153569290** 群或者是邮件反馈，谢谢您的关注。**XDroidMvp**会持续维护，如果喜欢，记得star fork。
 
 

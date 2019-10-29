@@ -4,7 +4,7 @@ android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
 
     defaultConfig {
-        applicationId 'cn.droidlover.xdroidmvp.demo'
+        applicationId 'cn.rogcv.xmvp.news'
         minSdkVersion rootProject.ext.android.minSdkVersion
         targetSdkVersion rootProject.ext.android.targetSdkVersion
         versionCode rootProject.ext.android.versionCode
@@ -21,8 +21,10 @@ android {
 
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
     annotationProcessor rootProject.ext.dependencies["butterknife-apt"]
     implementation rootProject.ext.dependencies["avi-loading"]
+
     implementation project(":mvp")
 }

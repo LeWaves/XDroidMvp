@@ -1,7 +1,6 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 
-group = 'com.github.limedroid'
 
 android {
     compileSdkVersion rootProject.ext.android.compileSdkVersion
@@ -18,7 +17,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    buildToolsVersion '27.0.3'
+
 }
 
 dependencies {
@@ -29,7 +28,6 @@ dependencies {
     api rootProject.ext.dependencies["annotations"]
     api rootProject.ext.dependencies["recyclerview-v7"]
 
-    api rootProject.ext.dependencies["xrecyclerview"]
     api rootProject.ext.dependencies["butterknife"]
     api rootProject.ext.dependencies["glide"]
     annotationProcessor rootProject.ext.dependencies["glide-compiler"]

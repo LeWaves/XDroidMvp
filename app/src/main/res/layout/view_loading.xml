@@ -11,6 +11,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:visibility="visible"
-        app:indicator="LineScale"
+        app:indicator="BallPulse"
         app:indicator_color="@color/colorPrimary" />
 </FrameLayout>

@@ -1,0 +1,4 @@
+#Tue Oct 29 14:13:12 CST 2019
+base.0=D\:\\AndroidWork\\XDroidMvp-master\\XDroidMvp-master\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

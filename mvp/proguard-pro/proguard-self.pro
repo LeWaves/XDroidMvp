@@ -3,8 +3,8 @@
 
 -keepattributes Signature
 -keepattributes *Annotation*
--keep class cn.droidlover.xdroidmvp.** { *; }
--keep interface cn.droidlover.xdroidmvp.** { *; }
--dontwarn cn.droidlover.xdroidmvp.**
+-keep class xmvp.** { *; }
+-keep interface xmvp.** { *; }
+-dontwarn xmvp.**
 
 # ------------------------------- 自定义区 end -------------------------------
